@@ -20,7 +20,7 @@
             android:name=".Diary"
             android:exported="false" />
         <activity
-            android:name=".todolist"
+            android:name=".Todolist"
             android:exported="false" />
         <activity
             android:name=".Days"

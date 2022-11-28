@@ -18,7 +18,7 @@ public class Days extends AppCompatActivity {
         todobtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),todolist.class);
+                Intent intent = new Intent(getApplicationContext(), Todolist.class);
                 startActivity(intent);
             }
         });
