@@ -26,11 +26,38 @@ public class Diary extends AppCompatActivity {
     EditText edtDiary;   //  edtDiary - 선택한 날짜의 일기를 쓰거나 기존에 저장된 일기가 있다면 보여주고 수정하는 영역
     Button btnSave;   //  btnSave - 선택한 날짜의 일기 저장 및 수정(덮어쓰기) 버튼
     String fileName;   //  fileName - 돌고 도는 선택된 날짜의 파일 이름
+    TextView textView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) { // 앱 첫 시작 시 돌아가는 메소드
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diary);
+
+
+        textView = findViewById(R.id.textView);
+
+        SeekBar seekBar = findViewById(R.id.seekBar);
+        seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+
+                textView.setText(String.format("스트레스 지수는 %d 입니다.", seekBar.getProgress()));
+            }
+        });
+
+
 
         // 뷰에 있는 위젯들 리턴 받아두기
         datePicker = (DatePicker) findViewById(R.id.datePicker);
