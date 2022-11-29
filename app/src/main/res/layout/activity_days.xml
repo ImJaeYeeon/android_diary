@@ -31,6 +31,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/note1"
                         android:src="@drawable/post"/>
                 </FrameLayout>
                 <FrameLayout
@@ -40,6 +41,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/note2"
                         android:src="@drawable/post"/>
                 </FrameLayout>
                 <FrameLayout
@@ -48,6 +50,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/note3"
                         android:src="@drawable/post"/>
                 </FrameLayout>
                 <ImageView
@@ -70,6 +73,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/note4"
                         android:src="@drawable/post"/>
                 </FrameLayout>
                 <FrameLayout
@@ -79,6 +83,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/note5"
                         android:src="@drawable/post"/>
                 </FrameLayout>
                 <FrameLayout
@@ -87,6 +92,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/note6"
                         android:src="@drawable/post"/>
                 </FrameLayout>
                 <ImageView
